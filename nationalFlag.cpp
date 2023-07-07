@@ -4,9 +4,7 @@ using namespace std;
 int main() {
     int gd = DETECT,gm;
     initgraph(&gd,&gm,"");
-    //getch();
     //initwindow(16*50,9*50);
-    //getch();
     //rectangle
     setcolor(GREEN);
     rectangle(40,80,600,400);
