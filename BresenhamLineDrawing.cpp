@@ -17,7 +17,7 @@ void bresenham(int xa,int ya,int xb,int yb) {
         y = ya;
         xEnd = xb;
     }
-    putpixel(x,y,WHITE);
+    putpixel(x,y,YELLOW);
     while(x < xEnd) {
         if(p < 0) {
             x += 1;
@@ -28,7 +28,8 @@ void bresenham(int xa,int ya,int xb,int yb) {
             y += 1;
             p += (2*dy - 2*dx);
         }
-        putpixel(x,y,WHITE);
+        delay(50);
+        putpixel(x,y,YELLOW);
     }
 }
 int main() {
